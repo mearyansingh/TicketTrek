@@ -1,7 +1,7 @@
 # TicketTrek
 
 <!-- ![Thumbnail](https://github.com/YuriDevAT/nikki-my-diary/blob/main/public/thumbnail-nikki.png) -->
-![Thumbnail](src/Assets/Images/TicketTrek.gif)
+![Thumbnail](https://github.com/mearyansingh/TicketTrek/blob/master/frontend/src/Assets/Images/TicketTrek.gif)
 
 # Getting Started with Create React App and Redux
 
