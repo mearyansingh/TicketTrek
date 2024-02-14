@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const colors = require('colors')
 const dotenv = require('dotenv').config()
 const { errorHandler } = require('./Middleware/ErrorMiddleware.js')
@@ -15,12 +16,24 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
-   res.json({ message: 'Welcome to the support desk api' })
+	res.json({ message: 'Welcome to the support desk api' })
 })
 
 //Routes
 app.use('/api/users', require('./Routes/UserRoutes.js'))
 app.use('/api/tickets', require('./Routes/TicketRoutes.js'))
+
+//Serve Frontend
+if (process.env.Node_ENV === "production") {
+	//set build folder as static
+	app.use(express.static(path.join(__dirname, '../frontend/build')))
+
+	app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
+} else {
+	app.get('/', (req, res) => {
+		res.json({ message: 'Welcome to the support desk api' })
+	})
+}
 
 app.use(errorHandler)
 
