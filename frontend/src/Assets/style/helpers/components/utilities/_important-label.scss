@@ -1,0 +1,24 @@
+/*
+* Utilities classes with important label
+*/
+
+.bg-light-imp {
+   background-color: var(--#{$prefix}light) !important;
+}
+
+.shadow-none-imp {
+   box-shadow: none !important;
+}
+
+
+.rounded-0-imp {
+   border-radius: 0 !important;
+}
+
+.overflow-hidden-imp {
+   overflow: hidden !important;
+}
+
+.fw-normal-imp {
+   font-weight: normal;
+}

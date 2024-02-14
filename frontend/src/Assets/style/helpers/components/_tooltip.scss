@@ -1,0 +1,9 @@
+/**=========  Tooltip =========**/
+.tooltip {
+   &-inner {
+      border: 1px solid var(--#{$prefix}border-color);
+      box-shadow: $tooltip-shadow;
+      cursor: default;
+      text-align: left;
+   }
+}

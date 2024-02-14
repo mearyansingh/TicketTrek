@@ -5,16 +5,22 @@
   "main": "server.js",
   "scripts": {
     "start": "node Backend/Server.js",
-    "server": "nodemon Backend/Server.js"
+    "server": "nodemon Backend/Server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Aryan Singh",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
-    "mongoose": "^8.1.1"
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "sass": "^1.70.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"

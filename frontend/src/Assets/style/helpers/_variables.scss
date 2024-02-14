@@ -1,0 +1,78 @@
+/** Variables **/
+
+/* ========= Scrollbar variables ========== */
+$scrollbar-width: 7px;
+$scrollbar-height: 7px;
+$scrollbar-border-radius: 10px;
+$scrollbar-track-bg-color: hsla(0, 0%, 87%, 0.75);
+$scrollbar-thumb-bg-color: rgba(0, 0, 0, 0.18);
+
+/* ========= Tooltips variables ========== */
+$tooltip-bg-color: $white;
+$tooltip-color: $gray-900;
+$tooltip-font-size: 0.813rem;
+$tooltip-shadow-color : rgba(82, 97, 107, 0.2);
+$tooltip-shadow: 0 4px 26px $tooltip-shadow-color;
+$tooltip-padding: 0.625rem;
+$tooltip-width: 11.25rem;
+$tooltip-bdr-rds: 4px;
+$tooltip-arrow-before-bdr-color: $border-color;
+$tooltip-arrow-after-bdr-color: $white;
+$tooltip-arrow-dark-bdr-color: #2b4d66;
+
+/* ========= Popups variables ========== */
+$custom-popup-header-bg: $body-bg;
+$custom-popup-header-padding: 0.9375rem 1.5625rem 0.625rem 1.5625rem;
+$custom-popup-title-weight: bold;
+$custom-popup-title-line-height: 1.4;
+$custom-popup-close-btn-mar: 0;
+$custom-popup-content-bg: $modal-content-bg;
+$custom-popup-content-padding: 1.25rem 1.563rem 0.5rem 1.563rem;
+$custom-popup-footer-bg: $body-bg;
+$custom-popup-footer-padding: 1.563rem;
+$gray-100 : $gray-100;
+$custom-popup-footer-top-bdr: 2px solid $white;
+$custom-popup-title-spacing: 1.25rem 1.875rem;
+$custom-popup-border-radius: 3px;
+
+/* ========= Card variables ========== */
+$card-shadow: 0 0 4px rgba($gray-900, 0.16);
+
+/* ========= Table variables ========== */
+$table-heading-padding: 0.625rem 1.25rem;
+$table-heading-font-size: 0.875rem;
+$table-heading-font-weight: bold;
+$table-heading-line-height: 100%;
+// $table-col-padding: 1.25rem;
+$table-col-padding: 0.938rem 1.25rem;
+$table-row-box-shadow: 0 4px 26px rgba(82, 97, 107, 0.2);
+$table-row-res-padding: 1rem;
+$table-row-res-border-radius: 0.325rem;
+$table-border-radius: 5px;
+$table-max-height: 30rem;
+
+
+/* ========= Skeleton Loader ========= */
+
+$skeleton-start-color: hsl(200, 20%, 80%);
+$skeleton-end-color: hsl(200, 20%, 95%);
+
+/* ========= root selector variable for dark mode ========= */
+
+:root {
+
+	/* ========= Tooltips variables ========== */
+	// --#{$prefix}tooltip-shadow: #{$tooltip-shadow};
+
+	/* ========= Popups variables ========== */
+	// --#{$prefix}popup-header-bg: #{$custom-popup-header-bg};
+	// --#{$prefix}popup-content-bg: #{$custom-popup-content-bg};
+
+	/* ========= Scrollbar variables ========== */
+	// --#{$prefix}scrollbar-track-bg-color: #{$scrollbar-track-bg-color};
+	// --#{$prefix}scrollbar-thumb-bg-color: #{$scrollbar-thumb-bg-color};
+
+	/* ========= Skeleton loader ========== */
+	// --#{$prefix}skeleton-start-color: #{$skeleton-start-color};
+	// --#{$prefix}skeleton-end-color: #{$skeleton-end-color};
+}

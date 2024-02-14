@@ -1,0 +1,31 @@
+/*
+ *  Scrollbar
+*/
+
+//Scrollbar
+$scrollbar-width: 2px;
+$scrollbar-height: 2px;
+$scrollbar-border-radius: 10px;
+$scrollbar-track-bg-color: hsla(0, 0%, 87%, 0.75);
+$scrollbar-thumb-bg-color: rgba(0, 0, 0, 0.18);
+
+.app-scrollbar {
+	&::-webkit-scrollbar {
+		height: $scrollbar-height;
+		width: $scrollbar-width;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: $scrollbar-border-radius;
+		background-color: $scrollbar-track-bg-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: $scrollbar-border-radius;
+		background-color: $scrollbar-thumb-bg-color;
+	}
+
+	scrollbar-color: $scrollbar-thumb-bg-color $scrollbar-track-bg-color;
+	scrollbar-width: thin;
+	-webkit-overflow-scrolling: touch;
+}

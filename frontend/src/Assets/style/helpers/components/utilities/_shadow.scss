@@ -1,0 +1,32 @@
+.shadow--lg {
+   box-shadow: 0 4px 26px rgba($gray-900, 0.2);
+}
+
+//Hover shadow
+.hover-shadow__lg {
+   @include transition(all 0.3s ease);
+
+   &:hover {
+      box-shadow: $box-shadow-lg;
+   }
+}
+
+.hover-shadow__md {
+   @include transition(all 0.3s ease);
+
+   &:hover {
+      box-shadow: $box-shadow;
+   }
+}
+
+.hover-shadow {
+   @include transition(all 0.3s ease);
+
+   &:hover {
+      box-shadow: 0 2px 13px rgba($gray-900, 0.1);
+   }
+}
+
+.shadow-inset {
+   box-shadow: inset 0 1px 2px rgb(0 0 0 / 40%);
+}

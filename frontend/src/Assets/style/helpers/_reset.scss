@@ -1,0 +1,43 @@
+/* ========= Padding ========== */
+.p-8 {
+	padding: 0.5rem
+}
+
+/* ========= Margin bottom 0 last child  ========== */
+.mb-last-0:last-child {
+	margin-bottom: 0;
+}
+
+.me-last-0:last-child {
+	margin-right: 0;
+}
+
+/* =========Common class for heigh in pixel  ========== */
+.h-40px {
+	height: 40px;
+}
+
+/***custom width class*/
+@include media-breakpoint-down(sm) {
+	.w-100-sm {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.w-100-md {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.w-100-lg {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.fs-14-sm {
+		font-size: 0.875rem;
+	}
+}

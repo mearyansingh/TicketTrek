@@ -1,0 +1,11 @@
+/**Capitalize first letter**/
+
+.txt-capitalize {
+   // display: inline-block;
+
+   &:first-letter {
+      text-transform: capitalize;
+   }
+
+   text-transform: lowercase;
+}
