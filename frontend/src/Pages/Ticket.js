@@ -51,7 +51,10 @@ function Ticket() {
 					:
 					<>
 						{isError ?
-							<ListEmptyPlaceholder message={message} />
+							<ListEmptyPlaceholder
+								message={message}
+								contentWrapperClass="w-100 px-3 px-md-0 w-50 mx-md-auto"
+							/>
 							:
 							<>
 								<Card className="mb-4 custom-animate-fadeup border-light-subtle shadow-sm">
@@ -96,9 +99,19 @@ function Ticket() {
 											</Button>
 										}</Card.Header>
 									<Card.Body className='p-3 p-md-4 p-xl-5 notes-body-scroll'>
-										{notes.map((note) => (
-											<NoteItem key={note._id} note={note} />
-										))}
+										{notes && (notes.length > 0) ?
+											<>
+												{notes.map((note) => (
+													<NoteItem key={note._id} note={note} />
+												))}
+											</>
+											:
+											<ListEmptyPlaceholder
+												message="Currently there is no note"
+												description="Please click on add note to add the new one"
+												contentWrapperClass="w-100 px-3 px-md-0 w-50 mx-md-auto"
+											/>
+										}
 									</Card.Body>
 								</Card>
 							</>

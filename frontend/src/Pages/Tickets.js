@@ -30,7 +30,10 @@ function Tickets() {
 					:
 					<>
 						{isError ?
-							<ListEmptyPlaceholder message={message} contentWrapperClass="w-100 px-3 px-md-0 w-50 mx-md-auto" />
+							<ListEmptyPlaceholder
+								message={message}
+								contentWrapperClass="w-100 px-3 px-md-0 w-50 mx-md-auto"
+							/>
 							:
 							<Card className="mb-3 custom-animate-fadeup border-light-subtle shadow-sm">
 								<Card.Body className='p-2 p-sm-3 p-md-4 p-xl-5'>
@@ -80,12 +83,14 @@ function Tickets() {
 											</Card.Body>
 										</Card>
 										:
-										<ListEmptyPlaceholder message="Currently, you have not reported any ticket" contentWrapperClass="w-100 px-3 px-md-0 w-50 mx-md-auto" />
+										<ListEmptyPlaceholder
+											message="Currently, you have not reported any ticket"
+											contentWrapperClass="w-100 px-3 px-md-0 w-50 mx-md-auto"
+										/>
 									}
 								</Card.Body>
 							</Card>
 						}
-
 					</>
 				}
 			</Container>

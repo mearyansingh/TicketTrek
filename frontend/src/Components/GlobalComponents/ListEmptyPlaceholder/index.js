@@ -10,7 +10,7 @@ function ListEmptyPlaceholder({ message, description, wrapperClass, contentWrapp
 	return (
 		<div className={`border-light-subtle border-2 border-dashed text-center py-5 py-sm-100 ${wrapperClass ? wrapperClass : ""}`}>
 			<div className={`${contentWrapperClass ? contentWrapperClass : ""}`}>
-				<i className="display-6 d-block mb-3 text-danger opacity-50 lh-1 bi bi bi-x-circle"></i>
+				<i className="display-6 d-block mb-4 text-danger opacity-50 lh-1 bi bi bi-x-circle"></i>
 				{message && message !== "" && <h5 className={`${messageClass} mb-0`}>{message}</h5>}
 				{description && description !== "" && <p className="mb-0 fs-14 mt-3">{description}</p>}
 			</div>

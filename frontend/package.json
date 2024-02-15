@@ -1,5 +1,5 @@
 {
-	"name": "frontend",
+	"name": "ticket-trek",
 	"version": "0.1.0",
 	"proxy": "http://localhost:8000",
 	"private": true,
@@ -17,6 +17,7 @@
 		"react-router-dom": "^6.22.0",
 		"react-scripts": "5.0.1",
 		"react-toastify": "^10.0.4",
+		"sass": "^1.70.0",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
