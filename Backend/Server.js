@@ -24,7 +24,7 @@ app.use('/api/users', require('./Routes/UserRoutes.js'))
 app.use('/api/tickets', require('./Routes/TicketRoutes.js'))
 
 //Serve Frontend
-if (process.env.Node_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
 	//set build folder as static
 	app.use(express.static(path.join(__dirname, '/frontend/build')))
 
@@ -37,7 +37,7 @@ if (process.env.Node_ENV === "production") {
 	})
 } else {
 	app.get('/', (req, res) => {
-		res.json({ message: 'Welcome to the support desk api' })
+		res.json({ message: 'Welcome to the TicketTrek api' })
 	})
 }
 
