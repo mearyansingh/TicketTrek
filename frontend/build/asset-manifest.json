@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1d3820c.css",
+    "main.js": "/static/js/main.f840804b.js",
+    "static/js/592.c3d4b242.chunk.js": "/static/js/592.c3d4b242.chunk.js",
+    "static/media/TicketTrek.gif": "/static/media/TicketTrek.8850132a241100b99b0d.gif",
+    "index.html": "/index.html",
+    "main.c1d3820c.css.map": "/static/css/main.c1d3820c.css.map",
+    "main.f840804b.js.map": "/static/js/main.f840804b.js.map",
+    "592.c3d4b242.chunk.js.map": "/static/js/592.c3d4b242.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1d3820c.css",
+    "static/js/main.f840804b.js"
+  ]
+}
