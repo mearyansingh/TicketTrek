@@ -5,10 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node Backend/Server.js",
-    "server": "nodemon Backend/Server.js",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "server": "nodemon Backend/Server.js"
   },
   "author": "Aryan Singh",
   "license": "MIT",
