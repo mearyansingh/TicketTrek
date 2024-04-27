@@ -4,8 +4,8 @@
   "description": "TicketTrek: Navigate Solutions, Raise Tickets",
   "main": "server.js",
   "scripts": {
-    "start": "node Backend/Server.js",
-    "server": "nodemon Backend/Server.js"
+    "start": "node Server.js",
+    "server": "nodemon Server.js"
   },
   "author": "Aryan Singh",
   "license": "MIT",
