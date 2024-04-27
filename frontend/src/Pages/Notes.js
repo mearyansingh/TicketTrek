@@ -20,8 +20,6 @@ function Notes() {
 	/*** Stateless variables */
 	const _addNotePopup = useRef(null);
 
-
-
 	//Close ticket
 	const onTicketClose = () => {
 		dispatch(closeTicket(ticketId))
@@ -29,13 +27,11 @@ function Notes() {
 		navigate('/tickets')
 	}
 
-
 	const handleAddNote = (data) => {
 
 		const { noteText } = data
 		dispatch(createNote({ noteText, ticketId }))
 	}
-
 
 	return (
 		<>

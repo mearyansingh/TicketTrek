@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
-	res.json({ message: 'Welcome to the support desk api' })
+	res.json({ message: 'Welcome to the TicketTrek api' })
 })
 
 //Routes
@@ -24,22 +24,22 @@ app.use('/api/users', require('./Routes/UserRoutes.js'))
 app.use('/api/tickets', require('./Routes/TicketRoutes.js'))
 
 //Serve Frontend
-if (process.env.NODE_ENV === "production") {
-	//set build folder as static
-	app.use(express.static(path.join(__dirname, '/frontend/build')))
+// if (process.env.NODE_ENV === "production") {
+// 	//set build folder as static
+// 	app.use(express.static(path.join(__dirname, '/frontend/build')))
 
-	app.get('*', (req, res) => {
-		res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html'), function (err) {
-			if (err) {
-				res.status(500).send(err)
-			}
-		})
-	})
-} else {
-	app.get('/', (req, res) => {
-		res.json({ message: 'Welcome to the TicketTrek api' })
-	})
-}
+// 	app.get('*', (req, res) => {
+// 		res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html'), function (err) {
+// 			if (err) {
+// 				res.status(500).send(err)
+// 			}
+// 		})
+// 	})
+// } else {
+// 	app.get('/', (req, res) => {
+// 		res.json({ message: 'Welcome to the TicketTrek api' })
+// 	})
+// }
 
 app.use(errorHandler)
 

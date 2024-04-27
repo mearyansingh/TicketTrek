@@ -53,10 +53,6 @@ const authSlice = createSlice({
 			state.isSuccess = false
 			state.message = ''
 		},
-		// todoToggled(state, action) {
-		//    const todo = state.find((todo) => todo.id === action.payload)
-		//    todo.completed = !todo.completed
-		// },
 	},
 	extraReducers: (builder) => {
 		builder
