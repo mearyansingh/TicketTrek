@@ -1,9 +1,18 @@
 {
    "version": 2,
-   "rewrites": [
+   "github": {
+      "enabled": true
+   },
+   "builds": [
       {
-         "source": "/(.*)",
-         "destination": "/"
+         "src": "*.js",
+         "use": "@vercel/node"
+      }
+   ],
+   "routes": [
+      {
+         "src": "/(.*)",
+         "dest": "/"
       }
    ]
 }
